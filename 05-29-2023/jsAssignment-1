@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  border: 2px solid darkblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+</style>
+<title>Page Title</title>
+</head>
+<body style = "background-color:#ADD8E6">
+
+<div>
+<h1 style="color:Green;"><i><center>VADAKATTU HEMANTH KUMAR</center></i></h1>
+<p style="color:Green;"><b>Educational background:</b> Recently graduated from "University of North Texas" in "Master's in information systems and development" stream. </p>
+
+<p style="color:Green;">I am done my undergraduate in Computer science and engineering stream from KL university,vijayawada.</p>
+
+<p style="color:Green;"><b>Date of birth:</b>16th june 1999</p>
+<p style="color:Green;"><b>Experience:</b>Worked as Application Developer Associate at Accenture.</p>
+
+</div>
+</body>
+</html>
+
+
