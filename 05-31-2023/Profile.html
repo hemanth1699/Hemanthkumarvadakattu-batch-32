@@ -1,0 +1,34 @@
+<html>
+<head>
+    
+<title>Hemanth</title>
+</head>
+<body>
+            <h1 style="color:blue;"><center><i>Hemanth Kumar Vadakattu</i></center></h1>
+            <h2><center>Fullstack Java Begineer</center></h2>
+        
+            <div align="center" >
+                <img src="assests\mypic.jpg" alt="Hemanth" height = 250, width = 250, style = "border-radius:50%;">
+                <div id ="hobby" ></div>
+            </div>
+
+</body>
+<script >
+    let profile = { 
+    First_name : " Hemanth Kumar",
+    LAST_name : "Vadakattu",
+    Dob : "16-june-1886",
+    Phone_num : 9405945854,
+    Email_id : "hemanthkumar1@gmail.com",
+    Gender: "Male",
+    Address: "Texas", 
+    Experience : "Worked as Application Developer Associate in Accenture",
+    Hobbies :["listeninng_music", "playing_vedio_games", "surfing_internet","playing cricket"]
+    };
+    var temp= "My Last Hobby: "+profile.Hobbies[profile.Hobbies.length-1]+"<br>"
+    temp=temp+" by :"+profile.First_name + "V"
+    document.getElementById("hobby").innerHTML = temp
+    console.log(profile)
+</script>
+
+</html>
