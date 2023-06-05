@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>My Hobbies</title>
+    </head>
+    <body>
+        <center><h1 style="color:blue"><i>My Hobbies</i></h1></center>
+        <button onclick="DisplayHobbies()">All Hobbies</button><br><br>
+        <input type = "text" id="newhobbie">
+        <button onclick="AddHobby(document.getElementById('newhobbie').value)">Add Hobbie</button><br><br>
+        <input type = "text" id="deletehobbie">
+        <button onclick="DeleteHobby(document.getElementById('deletehobbie').value)">Delete Hobbie</button>
+
+    </body>
+    <script>
+        var Hobbies = ["Playing Cricket", "Playning batminton","Surfing internet"];
+        function DisplayHobbies() 
+        {
+console.log(Hobbies);
+        }
+        function AddHobby(newhobbie)
+        {
+Hobbies.push(newhobbie);
+console.log(Hobbies);
+        }
+        function DeleteHobby(deletehobbie)
+        {
+            var newArray = Hobbies.filter(item => item !== deletehobbie);
+            console.log(newArray);
+        }
+    </script>
+</html>
