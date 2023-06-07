@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>Assignment 5</title>
+    <style>
+        body {
+
+        }
+    </style>
+</head>
+<body></body>
+    <center><i><h1 style="color:blue;">Hemanth Kumar Vadakattu</h1></i></center>
+    <center><i><h2>Fullstack Java Begineer</h2></i></center>
+    <i><h3 style="color: green">Profile Information</h3></i>
+    <script>
+        function Profileinfo() {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var gender = document.querySelector('input[name="gender"]:checked').value;
+            var email = document.getElementById("email").value;
+            var phoneNumber = document.getElementById("phoneNumber").value;
+            var hobbies = document.querySelectorAll('input[name="hobbies"]:checked');
+            var hobbiesList = "";
+            for (var i = 0; i < hobbies.length; i++) {
+                hobbiesList += hobbies[i].value + ", ";
+            }
+            var dob = document.getElementById("dob").value;
+
+            var profileInfo = "First Name: " + firstName + "<br><br>" +
+                "Last Name: " + lastName + "<br><br>" +
+                "Gender: " + gender + "<br><br>" +
+                "Email: " + email + "<br><br>" +
+                "Phone Number: " + phoneNumber + "<br><br>" +
+                "Hobbies: " + hobbiesList + "<br><br>" +
+                "Date of Birth: " + dob;
+
+            document.getElementById("profileInfo").innerHTML = profileInfo;
+        }
+        </script> 
+        <br><br>  
+        
+        <form onsubmit="event.preventDefault(); Profileinfo();">
+            <i><label for="firstName">First Name:</label></i>
+            <input type="text" id="firstName"><br><br>
+    
+            <i><label for="lastName">Last Name:</label></i>
+            <input type="text" id="lastName"><br><br>
+    
+            <i><label for="gender">Gender:</label></i>
+            <i><input type="radio" id="genderMale" name="gender" value="Male"> Male</i>
+            <i><input type="radio" id="genderFemale" name="gender" value="Female"> Female<br><br></i>
+    
+            <i><label for="email">Email:</label></i>
+            <input type="email" id="email"><br><br>
+    
+            <i><label for="phoneNumber">Phone Number:</label></i>
+            <input type="tel" id="phoneNumber"><br><br>
+    
+            <i><b><label for="hobbies">Hobbies:</label></b></i>
+            <i><input type="checkbox" id="hobby1" name="hobbies" value="Playing Cricket"> Playing Cricket</i>
+            <i><input type="checkbox" id="hobby2" name="hobbies" value="Surfing internet"> Surfing internet</i>
+            <i><input type="checkbox" id="hobby3" name="hobbies" value="Listening music"> Listening music<br><br></i>
+    
+            <i><label for="dob">Date of Birth:</label></i>
+            <input type="date" id="dob"><br><br>
+    
+            <button type="submit">Submit</button><br><br>
+        </form>
+    
+        <div id="profileInfo"></div>
+</div>
+</body>
+</html>
