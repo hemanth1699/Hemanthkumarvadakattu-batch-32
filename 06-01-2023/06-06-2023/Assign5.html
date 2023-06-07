@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title>Assignment 5</title>
+   
+<style>
+    body {
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <h1 style="color:blue;">Hemanth Kumar Vadakattu</h1>
+    <h2>Fullstack Java Begineer</h2>
+        <h3 style="color: green">Profile Information</h3>
+        <script>
+            function displayProfile() {
+                var firstName = document.getElementById("firstName").value;
+                var lastName = document.getElementById("lastName").value;
+                var dob = document.getElementById("dob").value;
+                var email = document.getElementById("email").value;
+                var phoneNumber = document.getElementById("phoneNumber").value;
+                
+                document.getElementById("sol").innerHTML =
+                    "First Name: " + firstName + "<br>" + "<br>"  +
+                    "Last Name: " + lastName + "<br>" + "<br>" +
+                    "Date of Birth: " + dob + "<br>" + "<br>" +
+                    "Email: " + email + "<br>" + "<br>" +
+                    "Phone Number: " + phoneNumber + "<br>" + "<br>" ;
+    
+            }
+        </script>
+            <br><br>
+            <i><label for="firstName">First Name:</label></i>
+            <input type="text" id="firstName" placeholder="Enter your first name"><br><br>
+    
+            <i><label for="lastName">Last Name:</label></i>
+            <input type="text" id="lastName" placeholder="Enter your last name"><br><br>
+
+            <i><label for="email">Email ID:</label></i>
+            <input type="email" id="email" placeholder="Enter your email"><br><br>
+    
+            <i><label for="dob">Date of Birth:</label></i>
+            <input type="date" id="dob"><br><br>
+    
+            
+            <i><label for="phoneNumber">Phone Number:</label></i>
+            <input type="tel" id="phoneNumber" placeholder="Enter your phone number"><br><br>
+    
+            <button type="button" onclick="displayProfile()">Submit</button><br><br>
+    
+        <div id="sol"></div>
+
+</body>
+</html>
