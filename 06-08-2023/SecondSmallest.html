@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> Protoype Assignment</title>
+        <center><i><h1 style="color:blue;">Hemanth Kumar Vadakattu</h1></i></center>
+        <center><i><h2>Fullstack Java Begineer</h2></i></center>
+        <i><h3 style="color: green">Assignment-7</h3></i> 
+        <h3>Second smallest value in array using prototype</h3>
+        <script>
+           Array.prototype.getSecondSmallest = function() {
+        if (this.length < 2) {
+            return undefined;
+        }
+        const sortedArray = this.sort((a, b) => a - b);
+        return sortedArray[1];
+    };
+
+    const numbers = [76, 27, 12, 8, 99, 60, -23];
+    const secondSmallest = numbers.getSecondSmallest();
+    console.log("Second Smallest:", secondSmallest);
+    </script>
+    </head>
+    <body>
+           
+    </body>
+</html>
